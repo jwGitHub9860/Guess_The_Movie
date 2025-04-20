@@ -17,8 +17,8 @@ public class Main {
         movie_list.seek(random_location); // finds random line location (TESTING CODE maybe?)
         String random_name = movie_list.readLine(); // reads random movie name (TESTING CODE maybe?)
 
-        System.out.printf("Guess the movie!");
-        System.out.printf("You have 10 guesses!");
+        System.out.printf("Guess the movie!\n");
+        System.out.printf("You have 10 guesses!\n");
 
         System.out.printf(random_name); // TESTING CODE
 
