@@ -23,6 +23,8 @@ Movie_List.txt
 
 Balliauw, Maarten. “Easy Hacks: How to Throw Java Exceptions: The Intellij IDEA Blog.” The JetBrains Blog, 12 Mar. 2024, blog.jetbrains.com/idea/2024/03/easy-hacks-how-to-throw-java-exceptions/#:~:text=To%20throw%20an%20exception%2C%20you,not%20checked%20at%20compile%20time. Accessed 20 Apr. 2025.
 
+Fluffy. “How to Get a Random Line of a Text File in Java?” _Stack Overflow_, 1 Nov. 1954, stackoverflow.com/questions/2218005/how-to-get-a-random-line-of-a-text-file-in-java. 
+
 “Java Program to Read a File to String.” GeeksforGeeks, GeeksforGeeks, 10 Oct. 2022, www.geeksforgeeks.org/java-program-to-read-a-file-to-string/. Accessed 20 Apr. 2025.
 
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 20 Apr. 2025.
