@@ -27,6 +27,8 @@ public class Main {
             random_name = movie_list.readLine(); // reads random movie name
         }
 
+        String guess_word = random_name.replaceAll("[a-zA-Z]", "_"); // replace all letters with "_" & "[a-zA-Z]" represents ALL Uppercase and Lowercase letters
+
         for (int i = 10; i >= 1; i--) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
