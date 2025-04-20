@@ -18,8 +18,7 @@ public class Main {
         movie_list.readLine(); // reads random movie name (need because First line read does NOT have whole movie name)
         String random_name = movie_list.readLine(); // reads random movie name
 
-        System.out.printf("Guess the movie!\n");
-        System.out.printf("You have 10 guesses!\n");
+        System.out.printf("Guess the movie!\nYou have 10 guesses!\n");
 
         System.out.printf(random_name + "\n"); // TESTING CODE
 
