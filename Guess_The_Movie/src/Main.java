@@ -16,7 +16,6 @@ public class Main {
 
         movie_list.seek(random_location); // finds random line location (TESTING CODE maybe?)
         String random_name = movie_list.readLine(); // reads random movie name (TESTING CODE maybe?)
-        //movie_list.close(); // closes movie list file (TESTING CODE maybe?)
 
         System.out.printf("Guess the movie!");
         System.out.printf("You have 10 guesses!");
@@ -29,5 +28,7 @@ public class Main {
             System.out.println("i = " + i); // DELETE LATER
             //if (letter != )
         }
+
+        movie_list.close(); // closes movie list file (TESTING CODE maybe?)
     }
 }
