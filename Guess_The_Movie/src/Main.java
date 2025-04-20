@@ -29,6 +29,6 @@ public class Main {
             //if (letter != )
         }
 
-        movie_list.close(); // closes movie list file (TESTING CODE maybe?)
+        movie_list.close(); // closes movie list file
     }
 }
