@@ -12,6 +12,7 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         File file = new File("C:\\Users\\jwori\\GitHub\\Guess_The_Movie\\Guess_The_Movie\\src\\Movie_List"); // accesses movie list text file
         final RandomAccessFile movie_list = new RandomAccessFile(file, "r"); // creates a random access file stream to read from
+        final long random_name = (long) (Math.random() * file.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
 
         System.out.printf("Guess the movie!");
         System.out.printf("You have 10 guesses!");
