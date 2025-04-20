@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.RandomAccess;
@@ -9,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException { // if file CANNOT be opened
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        string randomNumber = (string) (RandomAccessFile(File "") * 100) + 1; // "Math.random" creates floating point number between 0 & 1
+        File file = new File("Movie_List.txt"); // accesses movie list text file
 
         System.out.printf("Guess the movie!");
         System.out.printf("You have 10 guesses!");
