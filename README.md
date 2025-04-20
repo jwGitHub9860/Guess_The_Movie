@@ -21,6 +21,8 @@ Movie_List.txt
 ## Credits
 ###### References used while making project
 
+baeldung, “Count Occurrences of a Char in a String.” _Baeldung_, Zeger Hendrikse, 11 May 2024, www.baeldung.com/java-count-chars. Accessed 20 Apr. 2025.
+
 baeldung. “Java String.replaceAll().” _Baeldung_, Grzegorz Piwowarek, 3 Apr. 2025, www.baeldung.com/string-replace-all. Accessed 20 Apr. 2025.
 
 Balliauw, Maarten. “Easy Hacks: How to Throw Java Exceptions: The Intellij IDEA Blog.” _The JetBrains Blog_, 12 Mar. 2024, blog.jetbrains.com/idea/2024/03/easy-hacks-how-to-throw-java-exceptions/#:~:text=To%20throw%20an%20exception%2C%20you,not%20checked%20at%20compile%20time. Accessed 20 Apr. 2025.
