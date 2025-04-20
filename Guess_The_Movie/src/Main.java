@@ -12,7 +12,7 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         File file = new File("C:\\Users\\jwori\\GitHub\\Guess_The_Movie\\Guess_The_Movie\\src\\Movie_List"); // accesses movie list text file
         final RandomAccessFile movie_list = new RandomAccessFile(file, "r"); // creates a random access file stream to read from
-        final long random_location = (long) (Math.random() * file.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
+        final long random_location = (long) (Math.random() * movie_list.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
 
         movie_list.seek(random_location); // finds random line location (TESTING CODE maybe?)
         String random_name = movie_list.readLine(); // reads random movie name (TESTING CODE maybe?)
