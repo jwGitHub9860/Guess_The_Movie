@@ -14,8 +14,8 @@ public class Main {
         final RandomAccessFile movie_list = new RandomAccessFile(file, "r"); // creates a random access file stream to read from
         final long random_location = (long) (Math.random() * movie_list.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
 
-        movie_list.seek(random_location); // finds random line location (TESTING CODE maybe?)
-        String random_name = movie_list.readLine(); // reads random movie name (TESTING CODE maybe?)
+        movie_list.seek(random_location); // finds random line location
+        String random_name = movie_list.readLine(); // reads random movie name
 
         System.out.printf("Guess the movie!\n");
         System.out.printf("You have 10 guesses!\n");
