@@ -16,11 +16,12 @@ public class Main {
 
         movie_list.seek(random_location); // finds random line location (TESTING CODE maybe?)
         String random_name = movie_list.readLine(); // reads random movie name (TESTING CODE maybe?)
-        movie_list.close(); // closes movie list file (TESTING CODE maybe?)
-        System.out.printf(random_name); // TESTING CODE
+        //movie_list.close(); // closes movie list file (TESTING CODE maybe?)
 
         System.out.printf("Guess the movie!");
         System.out.printf("You have 10 guesses!");
+
+        System.out.printf(random_name); // TESTING CODE
 
         for (int i = 10; i >= 1; i--) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
