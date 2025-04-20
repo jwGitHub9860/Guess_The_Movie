@@ -28,6 +28,7 @@ public class Main {
         }
 
         String guess_word = random_name.replaceAll("[a-zA-Z]", "_"); // replace all letters with "_" & "[a-zA-Z]" represents ALL Uppercase and Lowercase letters
+        System.out.printf(guess_word + "\n"); // TESTING CODE
 
         for (int i = 10; i >= 1; i--) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
