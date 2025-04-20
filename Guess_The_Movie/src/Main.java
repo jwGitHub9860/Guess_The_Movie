@@ -15,13 +15,14 @@ public class Main {
         final long random_location = (long) (Math.random() * movie_list.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
 
         movie_list.seek(random_location); // finds random line location
-        String test = movie_list.readLine(); // reads random movie name
+        String test = movie_list.readLine(); // reads random movie name (TESTING CODE)
         String random_name = movie_list.readLine(); // reads random movie name AGAIN
 
         System.out.printf("Guess the movie!\n");
         System.out.printf("You have 10 guesses!\n");
 
-        System.out.printf(random_name); // TESTING CODE
+        System.out.printf(test + "\n"); // TESTING CODE
+        System.out.printf(random_name + "\n"); // TESTING CODE
 
         for (int i = 10; i >= 1; i--) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
