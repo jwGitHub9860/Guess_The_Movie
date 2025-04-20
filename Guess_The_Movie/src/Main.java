@@ -10,7 +10,8 @@ public class Main {
     public static void main(String[] args) throws IOException { // if file CANNOT be opened
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        File file = new File("Movie_List.txt"); // accesses movie list text file
+        File file = new File("C:\\Users\\jwori\\GitHub\\Guess_The_Movie\\Guess_The_Movie\\src\\Movie_List"); // accesses movie list text file
+        final RandomAccessFile movie_list = new RandomAccessFile(file, "r"); // creates a random access file stream to read from
 
         System.out.printf("Guess the movie!");
         System.out.printf("You have 10 guesses!");
@@ -19,7 +20,7 @@ public class Main {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i); // DELETE LATER
-            if (letter != )
+            //if (letter != )
         }
     }
 }
