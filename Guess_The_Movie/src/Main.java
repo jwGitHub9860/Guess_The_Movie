@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.RandomAccess;
 import java.util.Scanner; // need to use user input
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 
