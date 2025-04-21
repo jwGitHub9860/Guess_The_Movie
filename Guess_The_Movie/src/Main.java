@@ -30,6 +30,7 @@ public class Main {
         boolean gameWon = false;
 
         for (int i = 10; i >= 1; i--) { // gives 10 guesses to guess movie name
+            System.out.printf(guess_word + "\n"); // displays correct guesses
             System.out.println("Guess a letter: ");
 
             // Takes Character as User Input
@@ -42,7 +43,6 @@ public class Main {
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
                 }
             }
-            System.out.printf(guess_word + "\n"); // displays correct guesses
 
             int countDash = 0; // amount of "_" in "guess_word"
 
