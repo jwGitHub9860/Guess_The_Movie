@@ -45,17 +45,25 @@ public class Main {
                 if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
                 }
+
+                int countDash = 0; // amount of "_" in "guess_word"
+                for (int m = 0; m < guess_word.length(); m++) { // checks if whole name has been guessed
+                    if (guess_word.indexOf(m) == '_') { // counts amount of "_" in "guess_word"
+                        countDash++;
+                    }
+                }
             }
             System.out.printf(guess_word + "\n"); // displays correct guesses
 
-            //
+            if (gameWon) {
+                System.out.println("You WON!!!!");
+                break;
+            }
+            else {
+                System.out.println("You Lost.\nThe movie name was " + random_name);
+            }
         }
-        if (gameWon) {
-            System.out.println("You WON!!!!");
-        }
-        else {
-            System.out.println("You Lost.\nThe movie name was " + random_name);
-        }
+
         movie_list.close(); // closes movie list file
     }
 }
