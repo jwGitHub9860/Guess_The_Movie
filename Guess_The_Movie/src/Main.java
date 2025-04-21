@@ -20,15 +20,12 @@ public class Main {
 
         System.out.printf("Guess the movie!\nYou have 10 guesses!\n");
 
-        System.out.printf("random_name: " + random_name + "\n"); // TESTING CODE
-
         while (random_name == null) { // chooses another random movie name if first random name is null
             movie_list.readLine(); // reads random movie name (need because First line read does NOT have whole movie name)
             random_name = movie_list.readLine(); // reads random movie name
         }
 
         String guess_word = random_name.replaceAll("[a-zA-Z]", "_"); // replace all letters with "_" & "[a-zA-Z]" represents ALL Uppercase and Lowercase letters
-        System.out.printf("guess_word: " + guess_word + "\n"); // TESTING CODE
 
         Scanner scanner = new Scanner(System.in); // allows user input to be read
         boolean gameWon = false;
@@ -49,14 +46,13 @@ public class Main {
             System.out.printf(guess_word + "\n"); // displays correct guesses
 
             int countDash = 0; // amount of "_" in "guess_word"
-            System.out.println("countDash BEFORE: " + countDash + "\n"); // TESTING CODE
+
             for (int m = 0; m < guess_word.length(); m++) { // checks if whole name has been guessed
                 if (guess_word.charAt(m) == '_') { // counts amount of "_" in "guess_word"
                     countDash++;
                 }
             }
 
-            System.out.println("countDash AFTER: " + countDash + "\n"); // TESTING CODE
             if (countDash == 0) { // checks if "guess_word" still has '_'
                 gameWon = true;
             }
