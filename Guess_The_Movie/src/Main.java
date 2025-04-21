@@ -20,7 +20,7 @@ public class Main {
 
         System.out.printf("Guess the movie!\nYou have 10 guesses!\n");
 
-        System.out.printf(random_name + "\n"); // TESTING CODE
+        System.out.printf("random_name: " + random_name + "\n"); // TESTING CODE
 
         while (random_name == null) { // chooses another random movie name if first random name is null
             movie_list.readLine(); // reads random movie name (need because First line read does NOT have whole movie name)
@@ -28,13 +28,24 @@ public class Main {
         }
 
         String guess_word = random_name.replaceAll("[a-zA-Z]", "_"); // replace all letters with "_" & "[a-zA-Z]" represents ALL Uppercase and Lowercase letters
-        System.out.printf(guess_word + "\n"); // TESTING CODE
+        System.out.printf("guess_word: " + guess_word + "\n"); // TESTING CODE
 
-        for (int i = 10; i >= 1; i--) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i); // DELETE LATER
-            //if (letter != )
+        Scanner scanner = new Scanner(System.in); // allows user input to be read
+
+        for (int i = 10; i >= 1; i--) { // gives 10 guesses to guess movie name
+            System.out.println("Guess a letter: ");
+
+            // Takes Character as User Input
+            String input = scanner.next(); // reads next token from input (MUST USE because there's NO "nextChar()")
+            char letter_guess = input.charAt(0); // takes 1st character from User Input (MUST USE because there's NO "nextChar()")
+
+            System.out.println("You have " + (i - 1) + " guesses left.");
+            for (int j = 0; j < random_name.length(); j++) {
+                if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
+                    guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
+                }
+            }
+            System.out.printf(guess_word + "\n"); // displays correct guesses
         }
 
         movie_list.close(); // closes movie list file
