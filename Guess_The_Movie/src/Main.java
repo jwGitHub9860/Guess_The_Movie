@@ -50,7 +50,7 @@ public class Main {
 
             int countDash = 0; // amount of "_" in "guess_word"
             for (int m = 0; m < guess_word.length(); m++) { // checks if whole name has been guessed
-                if (guess_word.indexOf(m) == '_') { // counts amount of "_" in "guess_word"
+                if (guess_word.indexOf(m) != '_') { // counts amount of "_" in "guess_word"
                     countDash++;
                 }
             }
@@ -63,11 +63,10 @@ public class Main {
                 System.out.println("You WON!!!!");
                 break;
             }
-            else {
-                System.out.println("You Lost.\nThe movie name was " + random_name);
-            }
         }
-
+        if (!gameWon) {
+            System.out.println("You Lost.\nThe movie name was " + random_name);
+        }
         movie_list.close(); // closes movie list file
     }
 }
