@@ -1,3 +1,4 @@
+import java.io.CharArrayWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -28,6 +29,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in); // allows user input to be read
         boolean gameWon = false;
+        CharArrayWriter wrongLetters = new CharArrayWriter(); // holds ALL wrong guess letters
 
         for (int i = 10; i >= 1; i--) { // gives 10 guesses to guess movie name
             System.out.printf(guess_word + "\n"); // displays correct guesses
