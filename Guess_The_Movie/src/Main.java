@@ -44,6 +44,9 @@ public class Main {
                 if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
                 }
+                else {
+                    wrongLetters.append(letter_guess); // adds letter to "wrongLetters" array
+                }
             }
 
             int countDash = 0; // amount of "_" in "guess_word"
