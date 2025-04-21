@@ -49,12 +49,14 @@ public class Main {
             System.out.printf(guess_word + "\n"); // displays correct guesses
 
             int countDash = 0; // amount of "_" in "guess_word"
+            System.out.println("countDash BEFORE: " + countDash + "\n"); // TESTING CODE
             for (int m = 0; m < guess_word.length(); m++) { // checks if whole name has been guessed
-                if (guess_word.indexOf(m) != '_') { // counts amount of "_" in "guess_word"
+                if (guess_word.charAt(m) == '_') { // counts amount of "_" in "guess_word"
                     countDash++;
                 }
             }
 
+            System.out.println("countDash AFTER: " + countDash + "\n"); // TESTING CODE
             if (countDash == 0) { // checks if "guess_word" still has '_'
                 gameWon = true;
             }
