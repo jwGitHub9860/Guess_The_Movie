@@ -55,6 +55,10 @@ public class Main {
                 }
             }
 
+            if (countDash == 0) { // checks if "guess_word" still has '_'
+                gameWon = true;
+            }
+
             if (gameWon) {
                 System.out.println("You WON!!!!");
                 break;
