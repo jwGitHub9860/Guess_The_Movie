@@ -30,6 +30,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in); // allows user input to be read
         boolean gameWon = false;
         CharArrayWriter wrongLetters = new CharArrayWriter(); // holds ALL wrong guess letters
+        int wrong_letters_amount = 0; // AMOUNT of wrong guess letters
 
         for (int i = 10; i >= 1; i--) { // gives 10 guesses to guess movie name
             System.out.printf(guess_word + "\n"); // displays correct guesses
@@ -40,14 +41,20 @@ public class Main {
             char letter_guess = input.charAt(0); // takes 1st character from User Input (MUST USE because there's NO "nextChar()")
 
             System.out.println("\nYou have " + (i - 1) + " guesses left.");
+            boolean incorrect_letter = true;
+
             for (int j = 0; j < random_name.length(); j++) { // checks if "letter_guess" is in "random_name"
                 if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
-                }
-                else {
-                    wrongLetters.append(letter_guess); // adds letter to "wrongLetters" array
+                    incorrect_letter = false;
                 }
             }
+            if (incorrect_letter) { // checks if "letter_guess" is WRONG
+                System.out.println(letter_guess);
+                wrongLetters.append(letter_guess); // adds letter to "wrongLetters" array
+                wrongLetters.append(' ');
+            }
+            System.out.println("\nYou have guessed (" +  wrong_letters_amount + ") wrong letters: " + wrongLetters.toString()); // displays array of wrong letters
 
             int countDash = 0; // amount of "_" in "guess_word"
 
