@@ -8,12 +8,12 @@ import java.util.Scanner; // need to use user input
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException { // if file CANNOT be opened
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+        // Access "Movie_List" file
         File file = new File("C:\\Users\\jwori\\GitHub\\Guess_The_Movie\\Guess_The_Movie\\src\\Movie_List"); // accesses movie list text file
         final RandomAccessFile movie_list = new RandomAccessFile(file, "r"); // creates a random access file stream to read from
-        final long random_location = (long) (Math.random() * movie_list.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
 
+        // Access Random Movie Name
+        final long random_location = (long) (Math.random() * movie_list.length()); // chooses random movie name & "Math.random" creates floating point number between 0 & 1
         movie_list.seek(random_location); // finds random line location
         movie_list.readLine(); // reads random movie name (need because First line read does NOT have whole movie name)
         String random_name = movie_list.readLine(); // reads random movie name
@@ -31,6 +31,7 @@ public class Main {
         System.out.printf("guess_word: " + guess_word + "\n"); // TESTING CODE
 
         Scanner scanner = new Scanner(System.in); // allows user input to be read
+        boolean gameWon = false;
 
         for (int i = 10; i >= 1; i--) { // gives 10 guesses to guess movie name
             System.out.println("Guess a letter: ");
