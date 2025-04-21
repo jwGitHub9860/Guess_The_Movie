@@ -63,7 +63,7 @@ public class Main {
             }
         }
         if (!gameWon) {
-            System.out.println("You Lost.\nThe movie name was " + random_name);
+            System.out.println("You Lost.\nThe movie name was: " + random_name);
         }
         movie_list.close(); // closes movie list file
     }
