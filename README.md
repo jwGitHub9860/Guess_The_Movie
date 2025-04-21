@@ -27,6 +27,8 @@ baeldung. “Java String.replaceAll().” _Baeldung_, Grzegorz Piwowarek, 3 Apr.
 
 Balliauw, Maarten. “Easy Hacks: How to Throw Java Exceptions: The Intellij IDEA Blog.” _The JetBrains Blog_, 12 Mar. 2024, blog.jetbrains.com/idea/2024/03/easy-hacks-how-to-throw-java-exceptions/#:~:text=To%20throw%20an%20exception%2C%20you,not%20checked%20at%20compile%20time. Accessed 20 Apr. 2025.
 
+“Chararraywriter Append() Method in Java with Examples.” _GeeksforGeeks_, GeeksforGeeks, 5 June 2020, www.geeksforgeeks.org/chararraywriter-append-method-in-java-with-examples/. Accessed 20 Apr. 2025.
+
 Fluffy. “How to Get a Random Line of a Text File in Java?” _Stack Overflow_, 1 Nov. 1954, stackoverflow.com/questions/2218005/how-to-get-a-random-line-of-a-text-file-in-java. Accessed 20 Apr. 2025.
 
 “Java Program to Read a File to String.” _GeeksforGeeks_, GeeksforGeeks, 10 Oct. 2022, www.geeksforgeeks.org/java-program-to-read-a-file-to-string/. Accessed 20 Apr. 2025.
