@@ -33,8 +33,10 @@ Fluffy. “How to Get a Random Line of a Text File in Java?” _Stack Overflow_,
 
 “Java String Replace() Method.” _W3Schools Online Web Tutorials_, www.w3schools.com/java/ref_string_replace.asp. Accessed 20 Apr. 2025. 
 
+kazinix. “Replace a Character at a Specific Index in a String?” _Stack Overflow_, 1 May 1956, stackoverflow.com/questions/6952363/replace-a-character-at-a-specific-index-in-a-string. Accessed 20 Apr. 2025.
+
 “MLA Works Cited: Electronic Sources (Web Publications).” _MLA Works Cited: Electronic Sources - Purdue OWL® - Purdue University_, owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_electronic_sources.html. Accessed 20 Apr. 2025.
 
 Ralph. “Take a Char Input from the Scanner.” _Stack Overflow_, 1 Sept. 1957, stackoverflow.com/questions/13942701/take-a-char-input-from-the-scanner. Accessed 20 Apr. 2025.
 
-“Replace a Character at a Specific Index in a String in Java.” GeeksforGeeks, GeeksforGeeks, 8 Jan. 2024, www.geeksforgeeks.org/replace-a-character-at-a-specific-index-in-a-string-in-java/. Accessed 20 Apr. 2025.
+“Replace a Character at a Specific Index in a String in Java.” _GeeksforGeeks_, GeeksforGeeks, 8 Jan. 2024, www.geeksforgeeks.org/replace-a-character-at-a-specific-index-in-a-string-in-java/. Accessed 20 Apr. 2025.
