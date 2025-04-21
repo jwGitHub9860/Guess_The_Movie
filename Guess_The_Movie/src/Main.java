@@ -41,14 +41,21 @@ public class Main {
             char letter_guess = input.charAt(0); // takes 1st character from User Input (MUST USE because there's NO "nextChar()")
 
             System.out.println("You have " + (i - 1) + " guesses left.");
-            for (int j = 0; j < random_name.length(); j++) {
+            for (int j = 0; j < random_name.length(); j++) { // checks if "letter_guess" is in "random_name"
                 if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
                 }
             }
             System.out.printf(guess_word + "\n"); // displays correct guesses
-        }
 
+            //
+        }
+        if (gameWon) {
+            System.out.println("You WON!!!!");
+        }
+        else {
+            System.out.println("You Lost.\nThe movie name was " + random_name);
+        }
         movie_list.close(); // closes movie list file
     }
 }
