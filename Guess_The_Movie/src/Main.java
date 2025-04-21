@@ -37,7 +37,7 @@ public class Main {
             String input = scanner.next(); // reads next token from input (MUST USE because there's NO "nextChar()")
             char letter_guess = input.charAt(0); // takes 1st character from User Input (MUST USE because there's NO "nextChar()")
 
-            System.out.println("You have " + (i - 1) + " guesses left.");
+            System.out.println("\nYou have " + (i - 1) + " guesses left.");
             for (int j = 0; j < random_name.length(); j++) { // checks if "letter_guess" is in "random_name"
                 if (random_name.charAt(j) == letter_guess) { // checks if "letter_guess" is CORRECT
                     guess_word = guess_word.substring(0, j) + letter_guess + guess_word.substring(j + 1); // replaces corresponding "_" with "letter_guess"
